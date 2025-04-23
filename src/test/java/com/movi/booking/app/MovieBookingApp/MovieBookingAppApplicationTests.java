@@ -29,6 +29,7 @@ class MovieBookingAppApplicationTests {
 	private HomeController homeController;
 	private Model model;
 
+	
 	@BeforeEach
 	public void setUp() {
 		movieService = mock(MovieService.class);

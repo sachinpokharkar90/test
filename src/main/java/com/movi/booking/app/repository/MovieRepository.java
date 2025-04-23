@@ -9,6 +9,7 @@ import com.movi.booking.app.model.Movie;
 
 @Repository
 public interface MovieRepository extends JpaRepository<Movie, String> {
+	
 	// Custom query methods if needed
 	List<Movie> findByTitleContainingIgnoreCase(String title);
 

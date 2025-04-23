@@ -15,6 +15,7 @@ import jakarta.annotation.PostConstruct;
 
 public class MovieService {
 
+	
 	private List<Movie> movieList;
 
 	@Autowired
