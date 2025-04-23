@@ -30,6 +30,7 @@ public class HomeController {
 		return "home";
 	}
 
+	
 	// Search Page (Displays search results)
 	@GetMapping("/search")
 	public String searchPage(@RequestParam("query") String query, Model model) {
