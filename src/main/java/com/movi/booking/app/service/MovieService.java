@@ -16,7 +16,7 @@ import jakarta.annotation.PostConstruct;
 public class MovieService {
 
 	private List<Movie> movieList;
-	
+
 	@Autowired
 	private MovieRepository movieRepository;
 
@@ -35,7 +35,7 @@ public class MovieService {
 		return movieRepository.findTop4ByOrderByReleaseDateDesc();
 	}
 
-	//Search Movies
+	// Search Movies
 	public List<Movie> searchMovies(String query) {
 		return movieRepository.findByTitleContainingIgnoreCase(query);
 	}

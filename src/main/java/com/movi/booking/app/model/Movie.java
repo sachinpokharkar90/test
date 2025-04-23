@@ -18,6 +18,14 @@ public class Movie {
 		this.description = description;
 	}
 
+	public Movie(String title, String director, String genre, LocalDate releaseDate, String description) {
+		this.title = title;
+		this.director = director;
+		this.releaseDate = releaseDate;
+		this.genre = genre;
+		this.description = description;
+	}
+
 	public String getTitle() {
 		return title;
 	}

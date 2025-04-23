@@ -1,11 +1,15 @@
 package com.movi.booking.app.MovieBookingApp;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -37,7 +41,7 @@ class MovieBookingAppApplicationTests {
 	}
 
 	@Test
-	public void testHomePage() {
+	public void testHomePage() throws IOException {
 		List<Movie> mockMovies = List
 				.of(new Movie("Inception", "Christopher Nolan", "Sci-Fi", LocalDate.now(), "A dream story."));
 

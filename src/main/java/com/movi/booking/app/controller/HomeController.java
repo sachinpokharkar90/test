@@ -15,12 +15,11 @@ import com.movi.booking.app.service.MovieService;
 @RestController("/movieBooking")
 public class HomeController {
 
-	
 	private MovieService movieService;
 
 	@Autowired
 	public HomeController(MovieService movieService) {
-		this.movieService=movieService;
+		this.movieService = movieService;
 	}
 
 	// Home Page (Shows 4 most recent movies)
