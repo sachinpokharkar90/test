@@ -14,6 +14,7 @@ import com.movi.booking.app.service.MovieService;
 
 @RestController("/movieBooking")
 public class HomeController {
+	
 
 	private MovieService movieService;
 
